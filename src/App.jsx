@@ -39,6 +39,8 @@ function App() {
         storeName,
         avatar,
         shopIcon,
+        due: new Date(new Date().setDate(new Date().getDate() + 30)).toISOString(),
+        plan: new Date().toISOString(),
       });
 
       // Create a document in the "whiteList" collection
